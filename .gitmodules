@@ -1,0 +1,15 @@
+[submodule "service-where-when"]
+	path = service-where-when
+	url = https://github.com/TeamSparkles/service-where-when.git
+[submodule "service-header"]
+	path = service-header
+	url = https://github.com/TeamSparkles/service-header.git
+[submodule "service-suggestion"]
+	path = service-suggestion
+	url = https://github.com/TeamSparkles/service-suggestions.git
+[submodule "service-description"]
+	path = service-description
+	url = https://github.com/TeamSparkles/service-description.git
+[submodule "service-attendees"]
+	path = service-attendees
+	url = https://github.com/TeamSparkles/service-attendees.git
