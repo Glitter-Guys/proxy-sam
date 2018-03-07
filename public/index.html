@@ -1,1 +1,23 @@
-<!doctype html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<!--     <link rel="stylesheet" href="/style.css"> -->
+    <title>You Down</title>
+  </head>
+  <body>
+    <div id="attendees"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
+    <script src="http://localhost:8000/bundle.js"></script>
+
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      ReactDOM.render(
+        React.createElement(attendees),
+        document.getElementById("attendees")
+      );
+    </script>
+  </body>
+</html>
