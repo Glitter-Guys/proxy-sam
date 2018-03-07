@@ -10,6 +10,7 @@
   </head>
   <body>
     <div id='header'></div>
+    <div id="WhereWhen"></div>
     <div id="description"></div>
     <div id="attendees"></div>
     <div id="suggestions"></div>
@@ -19,7 +20,7 @@
     <script src="http://localhost:4000/bundle.js"></script>
     <script src="http://localhost:8080/event/klcbbpyxfbqb/bundle.js"></script>
     <script src="http://localhost:4001/bundle.js"></script>
-
+    <script src='http://localhost:9000/build/app.bundle.js'></script> 
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
@@ -37,6 +38,10 @@
       ReactDOM.render(
         React.createElement(Suggestions),
         document.getElementById("suggestions")
+        )
+      ReactDOM.render(
+        React.createElement(WhereWhen),
+        document.getElementById("WhereWhen")
         )
     </script>
   </body>
