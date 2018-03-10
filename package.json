@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "node ./server.js",
+    "docker": "node ./server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,8 @@
     "mysql": "^2.15.0",
     "mysql-server": "^1.0.5",
     "node": "^9.7.0",
-    "react": "^16.2.0"
+    "react": "^16.2.0",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.1"

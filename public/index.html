@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
 <!--     <link rel="stylesheet" href="/style.css"> -->
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-      <link rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+      <link rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css">
+      <link rel="stylesheet"  type="text/css" href="styles.css">
     <title>You Down</title>
   </head>
   <body>
@@ -14,31 +14,32 @@
     <div id="description"></div>
     <div id="attendees"></div>
     <div id="suggestions"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
-    <script src="http://localhost:8000/bundle.js"></script>
-    <script src="http://localhost:4000/bundle.js"></script>
-    <script src="http://localhost:8080/event/klcbbpyxfbqb/bundle.js"></script>
-    <script src="http://localhost:4001/bundle.js"></script>
-    <script src='http://localhost:9000/build/app.bundle.js'></script> 
+    <script src="http://13.59.62.48/bundle.js"></script>
+    <script src="http://18.218.58.234/bundle.js"></script>
+    <script src="18.217.231.83/build/bundle.js"></script>
+    <script src="http://52.14.36.145:1111/event/247791370/bundle.js"></script>
+    <script src="http://18.191.1.33/bundle.js"></script> 
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
-      ReactDOM.render(
-        React.createElement(attendees),
-        document.getElementById("attendees")
-      );
       ReactDOM.render(
         React.createElement(Details),
         document.getElementById("description")
         )
-      ReactDOM.render(
-        React.createElement(Header, {data:window.data}),
-        document.getElementById('header')
-      );
+      // ReactDOM.render(
+      //   React.createElement(Header, {data:window.data}),
+      //   document.getElementById('header')
+      // );
       ReactDOM.render(
         React.createElement(Suggestions),
         document.getElementById("suggestions")
         )
+      ReactDOM.render(
+        React.createElement(Attendees),
+        document.getElementById("attendees")
+      );
       ReactDOM.render(
         React.createElement(WhereWhen),
         document.getElementById("WhereWhen")
@@ -46,6 +47,4 @@
     </script>
   </body>
 </html>
-
-
 
