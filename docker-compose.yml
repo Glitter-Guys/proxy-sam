@@ -2,71 +2,7 @@ version: '2'
 
 services:
   proxy:
-    image: samwatson6/youdown_proxy
-    depends_on:
-      - 'details'
-      - 'header'
-      - 'suggestions'
-      - 'attendees'
-      - 'wherewhen'
+    build: ''
     ports:
-      - '80:3000'
-    environment:
-      HOST_IP: 127.0.0.1
-
-  details:
-    image: girikalra/youdown_details
-    depends_on:
-      - 'database'
-    ports: 
-      - '2222:4000'
-    environment:
-      HOST_IP: 127.0.0.1      
-
-  header: 
-    image: yzheny/youdown_header
-    depends_on:
-      - 'database'
-    ports: 
-      - '1111:8080'
-    environment:
-      HOST_IP: 127.0.0.1
-
-  wherewhen:
-    image: bstanger/youdown_wherewhen
-    depends_on:
-      - 'database'
-    ports:
-      - '5555:9000'
-    environment:
-      HOST_IP: 127.0.0.1      
-
-  suggestions:
-    image: girikalra/youdown_suggestions
-    depends_on:
-      - 'database'
-    ports:
-      - '4444:4001'
-    environment:
-      HOST_IP: 127.0.0.1      
-
-  attendees:
-    image: samwatson6/youdown_attendees
-    restart: always
-    depends_on:
-      - 'sqldb'
-    ports:
-      - '3333:8000'
-    environment:
-      HOST_IP: 127.0.0.1      
-
-  database:
-    image: mongo:latest
-
-  sqldb:
-    image: mysql:latest
-    restart: always
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-
+      - '80:3333'
 

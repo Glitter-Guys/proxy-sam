@@ -27,14 +27,15 @@ app.use('/api/:eventid/details', function(req, res) {
  req.pipe(details).pipe(res);
 })
 
-app.use('/event/api/:eventid/suggestions', function(req, res) {
- var suggestions = request('http://13.59.62.48/event/api/:eventid/suggestions');
+app.use('/event/:eventid/api/:eventid/suggestions', function(req, res) {
+ var eventid = req.baseUrl.split('/')[2];
+ var suggestions = request('http://13.59.62.48/api/' + eventid + '/suggestions/');
  req.pipe(suggestions).pipe(res);
 })
 
 app.use('/suggestions', function(req, res) {
- var category = req.url + '&category=Food';
- var search = request('http://13.59.62.48/suggestions' + category);
+ console.log(req.url)
+ var search = request('http://13.59.62.48/suggestions' + req.url);
  req.pipe(search).pipe(res);
 })
 

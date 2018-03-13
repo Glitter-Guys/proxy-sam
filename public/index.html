@@ -19,19 +19,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
     <script src="http://13.59.62.48/bundle.js"></script>
     <script src="http://18.218.58.234/bundle.js"></script>
-    <script src="18.217.231.83/build/bundle.js"></script>
     <script src="http://52.14.36.145:1111/event/247791370/bundle.js"></script>
     <script src="http://18.191.1.33/bundle.js"></script> 
+    <script src="http://18.217.231.83/build/app.bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
         React.createElement(Details),
         document.getElementById("description")
         )
-      // ReactDOM.render(
-      //   React.createElement(Header, {data:window.data}),
-      //   document.getElementById('header')
-      // );
+      ReactDOM.render(
+        React.createElement(Header, {data:window.data}),
+        document.getElementById('header')
+      );
       ReactDOM.render(
         React.createElement(Suggestions),
         document.getElementById("suggestions")
